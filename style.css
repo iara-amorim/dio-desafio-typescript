@@ -1,0 +1,51 @@
+* {
+  font-family: sans-serif;
+  color: #251d3a;
+}
+
+nav {
+  width: 10%;
+  min-width: fit-content;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #187498;
+  float: left;
+}
+
+nav a {
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+  background-color: #187498;
+  color: #eeeeee;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a:active {
+  background-color: #001d6e;
+}
+
+nav a:hover {
+  background-color: #22577e;
+}
+
+main {
+  width: 85%;
+  height: 100%;
+  float: right;
+}
+
+button {
+  cursor: pointer;
+}

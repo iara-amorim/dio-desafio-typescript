@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./desafio04.js" defer></script>
+    <link rel="stylesheet" href="../../style.css" />
+    <style>
+      .alert {
+        background-color: #f9f9c5;
+        color: #ff5b00;
+        font-family: monospace;
+        padding: 8px;
+        width: 70%;
+        text-align: center;
+      }
+      .alert-close {
+        margin-left: 15px;
+        color: #ff5b00;
+        float: right;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      footer {
+        position: fixed;
+        left: 10;
+        bottom: 0;
+        width: 100%;
+        color: #fff;
+      }
+    </style>
+    <title>DIO - Desafios Typescript</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="../../index.html">Desafios</a></li>
+        <li><a href="../desafio01/desafio01.html">Desafio 1</a></li>
+        <li><a href="../desafio02/desafio02.html">Desafio 2</a></li>
+        <li><a href="../desafio03/desafio03.html">Desafio 3</a></li>
+        <li><a href="./desafio04.html">Desafio 4</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="desafio04">
+        <h1>Desafio 04</h1>
+        <p>
+          Utilizar a API do
+          <a
+            href="https://www.themoviedb.org"
+            target="_blank"
+            style="color: blue"
+            >themoviedb.org</a
+          >.
+        </p>
+        <div>
+          <p>Resposta:</p>
+          <div class="alert">
+            ⚠️ This product uses the TMDB API but is not endorsed or certified
+            by TMDB.
+            <span
+              class="alert-close"
+              onclick="this.parentElement.style.display='none';"
+              >&times;</span
+            >
+          </div>
+          <br />
+          <code>
+            <div style="display: flex">
+              <div
+                style="
+                  display: flex;
+                  width: 300px;
+                  height: 100px;
+                  justify-content: space-between;
+                  flex-direction: column;
+                "
+              >
+                <input
+                  id="login"
+                  placeholder="Login"
+                  onchange="preencherLogin(event)"
+                />
+                <input
+                  id="senha"
+                  placeholder="Senha"
+                  type="password"
+                  onchange="preencherSenha(event)"
+                />
+                <input
+                  id="api-key"
+                  placeholder="Api Key"
+                  onchange="preencherApi(event)"
+                />
+                <button id="login-button" disabled>Login</button>
+              </div>
+              <div id="search-container" style="margin-left: 20px">
+                <input id="search" placeholder="Escreva..." />
+                <button id="search-button">Pesquisar filme 🔎</button>
+              </div>
+            </div>
+          </code>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p style="color: #fff; margin-left: 20px; margin-bottom: 0">Powered by</p>
+      <a href="https://www.themoviedb.org/" target="_blank"
+        ><img
+          id="tmdb_logo"
+          src="./TMDB_Logo.svg"
+          height="90px"
+          width="90px"
+          style="margin-left: 20px; margin-bottom: 10px"
+      /></a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./desafio02.js" defer></script>
+    <link rel="stylesheet" href="../../style.css" />
+    <style>
+      pre {
+        background-color: #191919;
+        width: 50%;
+      }
+      span {
+        color: #fff;
+        font-family: monospace;
+        font-size: large;
+      }
+      .teal {
+        color: #40dfef;
+      }
+      .light-blue {
+        color: #47b5ff;
+      }
+      .dark-blue {
+        color: #488fb1;
+      }
+      .yellow {
+        color: #f9d923;
+      }
+      .brown {
+        color: #df7861;
+      }
+      .avocato {
+        color: #d9f8c4;
+      }
+    </style>
+    <title>DIO - Desafios Typescript</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="../../index.html">Desafios</a></li>
+        <li><a href="../desafio01/desafio01.html">Desafio 1</a></li>
+        <li><a href="./desafio02.html">Desafio 2</a></li>
+        <li><a href="../desafio03/desafio03.html">Desafio 3</a></li>
+        <li><a href="../desafio04/desafio04.html">Desafio 4</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="desafio02">
+        <h1>Desafio 02</h1>
+        <p>Melhorar o código apresentado usando TS.</p>
+        <div>
+          <p>Resposta:</p>
+          <pre>
+            <code style="color: #fff; font-family: monospace;">
+              <span class="dark-blue">enum</span> <span class="teal">Profissao</span> <span class="yellow">{</span>
+                <span class="light-blue">A</span> = <span class="brown">"Atriz"</span>,
+                <span class="light-blue">B</span> = <span class="brown">"Padeiro"</span>,
+                <span class="light-blue">C</span> = <span class="brown">"Limpador de Chaminé"</span>,
+                <span class="yellow">}</span>
+
+                <span class="dark-blue">interface</span> <span class="teal">Pessoa</span> <span class="yellow">{</span>
+                  <span class="light-blue">nome</span>: <span class="teal">String</span>;
+                  <span class="light-blue">idade</span>: <span class="teal">Number</span>;
+                  <span class="light-blue">profissao</span>: <span class="teal">Profissao</span>;
+                <span class="yellow">}</span>
+
+                <span class="dark-blue">const</span> <span class="light-blue">maria</span>: <span class="teal">Pessoa</span> = <span class="yellow">{</span>
+                  <span class="light-blue">nome</span>: <span class="brown">"Maria"</span>,
+                  <span class="light-blue">idade</span>: <span class="avocato">29</span>,
+                  <span class="light-blue">profissao</span>: <span class="teal">Profissao</span>.<span class="dark-blue">A</span>,
+                <span class="yellow">}</span>;
+            </code>
+          </pre>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

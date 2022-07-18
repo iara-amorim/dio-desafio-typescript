@@ -1,19 +1,14 @@
 {
-  "name": "aula-dio",
+  "name": "dio-desafio-typescript",
   "version": "1.0.0",
-  "description": "",
+  "description": "Desafio Typescript DIO - Santander Bootcamp 2022",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "lite-server",
     "watch": "tsc --watch"
   },
-  "author": "",
+  "author": "João Lira (https://github.com/lira1705)",
   "license": "ISC",
-  "dependencies": {
-    "lite-server": "^2.6.1"
-  },
   "devDependencies": {
-    "typescript": "^4.3.5"
+    "typescript": "^4.7.4"
   }
 }

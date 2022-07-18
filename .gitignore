@@ -1,4 +1,5 @@
-node_modules
-app.js
-**/*.js
 **/*.js.map
+node_modules/
+.npm
+.node_repl_history
+.vscode-test
